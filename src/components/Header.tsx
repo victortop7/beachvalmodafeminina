@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingBag, Menu, X } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import InstagramIcon from './InstagramIcon';
+import { asset } from '../lib/format';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -44,7 +45,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
             <img
-              src="/logo.png"
+              src={asset('logo.png')}
               alt="Beach Val"
               style={{ height: '48px', width: 'auto', objectFit: 'contain' }}
             />
@@ -155,7 +156,7 @@ export default function Header() {
             style={{ background: 'rgba(5,5,5,0.98)', backdropFilter: 'blur(24px)' }}
           >
             <div className="flex-1 flex flex-col justify-center px-10">
-              <img src="/logo.png" alt="Beach Val" style={{ height: '44px', width: 'auto', objectFit: 'contain', marginBottom: '32px', opacity: 0.9 }} />
+              <img src={asset('logo.png')} alt="Beach Val" style={{ height: '44px', width: 'auto', objectFit: 'contain', marginBottom: '32px', opacity: 0.9 }} />
               <div className="gold-line mb-12" />
               {links.map((link, i) => (
                 <motion.div

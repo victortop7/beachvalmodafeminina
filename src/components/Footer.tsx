@@ -1,6 +1,7 @@
 import { MessageCircle, MapPin } from 'lucide-react';
 import InstagramIcon from './InstagramIcon';
 import { Link } from 'react-router-dom';
+import { asset } from '../lib/format';
 
 export default function Footer() {
   return (
@@ -11,7 +12,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="mb-6">
               <img
-                src="/logo.png"
+                src={asset('logo.png')}
                 alt="Beach Val"
                 style={{ height: '52px', width: 'auto', objectFit: 'contain' }}
               />

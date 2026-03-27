@@ -117,8 +117,8 @@ body {
     height: auto !important;
     min-height: 100svh !important;
   }
-  .hero-carousel { display: none !important; }
-  .hero-text { padding: 120px 24px 60px !important; }
+  .hero-carousel { height: 340px !important; }
+  .hero-text { padding: 100px 24px 40px !important; }
 }
 
 /* Product page mobile */
